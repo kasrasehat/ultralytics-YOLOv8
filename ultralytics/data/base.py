@@ -65,7 +65,7 @@ class BaseDataset(Dataset):
         super().__init__()
         self.img_path = img_path
         self.imgsz = imgsz
-        self.augment = augment
+        self.augment = augment # I have to change augment to true then
         self.single_cls = single_cls
         self.prefix = prefix
         self.fraction = fraction
